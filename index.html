@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="./teakettle.png" type="image/png">
+
+  <title>Peace</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <button id="stop-music-btn" title="Stop the music">🔇 Silence</button>
+  <!-- <div id="party-popup">
+    <div class="popup-box">
+      <h2>Welcome to your mind</h2>
+      <button id="party-btn">Enter for Peace</button>
+    </div>
+  </div>
+  
+  <audio id="party-audio" src="I've Got To See You Again.mp3" preload="auto"></audio> -->
+<!-- AUDIO (update src to your track) -->
+<audio id="party-audio" preload="auto" loop>
+  <source src="I've Got To See You Again.mp3" type="audio/mpeg">
+</audio>
+
+<!-- VICTORIAN ENTRY OVERLAY -->
+<div id="gate-overlay" role="dialog" aria-modal="true" aria-labelledby="gate-title">
+  <div class="gate-card" role="document">
+    <h2 id="gate-title">Dearest Guest</h2>
+    <p class="gate-sub">Beyond this gate lies a sanctuary of petals, melodies, and gentle thoughts.</p>
+
+    <div class="gate-divider" aria-hidden="true">
+      <!-- simple ornamental divider -->
+ 
+  <img src="victline.png" alt="" />
+
+    </div>
+
+    <p class="gate-copy">Step gently. May peace find you here.</p>
+
+<button id="party-btn" class="teapot-btn" aria-label="Enter the garden">
+  <img src="teakettle.png" alt="Victorian teapot with roses" />
+</button>
+<p class="teapot-caption">Enter</p>
+
+    <p class="gate-hint" id="sound-hint" aria-live="polite"></p>
+  </div>
+</div>
+
+
+
+  <div class="hero">
+    <div class="overlay"></div>
+    <div class="hero-content">
+      <h1>Welcome</h1>
+      <!-- <h2>Come Celebrate the Icon Himself</h2> -->
+   
+
+    </div>
+  
+  <img class="bouncing-blue" id="Blue1" src="./blueflower.png" alt="Blue1">
+  <img class="bouncing-blue" id="Blue2"  src="./blueflower.png" alt="Blue2">
+   <img class="bouncing-blue" id="Blue2"  src="./blueflower.png" alt="Blue3">
+ 
+  <img class="bouncing-pink" id="pink1" src="./pinkflower.png" alt="pink1">
+  <img class="bouncing-pink" id="pink2"  src="./pinkflower.png" alt="pink2">
+  <img class="bouncing-pink" id="pink3"  src="./pinkflower.png" alt="pink3">
+
+  <img class="bouncing-multi" id="multi1" src="./multicolor.png" alt="multi1">
+  <img class="bouncing-multi" id="multi2"  src="./multicolor.png" alt="multi2">
+  <img class="bouncing-multi" id="multi3"  src="./multicolor.png" alt="multi3">
+  
+   <img class="bouncing-yellow" id="yellow1" src="./yellow.png" alt="yellow1">
+  <img class="bouncing-yellow" id="yellow2"  src="./yellow.png" alt="yellow2">
+  <img class="bouncing-yellow" id="yellow3"  src="./yellow.png" alt="yellow3">
+
+  </div>
+  <!-- <section class="neon-slider">
+    <div class="slider-track">
+      <img src="./johnnydisney.png" alt="in disney">
+      <img src="./falljohnny.jpg" alt="guardians of galaxy fall">
+      <img src="./johnnydrum.png" alt="drummin">
+      <img src="./johnnygwin.png" alt="winnin">
+      <img src="./johnnysparkle.png" alt="sparkle">
+      <img src="./johnnytat.png" alt="tattin up">
+      <img src="./johnnyride.png" alt="vroom vroom">
+      <img src="./johnnysnaz.png" alt="oh yeah">
+
+      <img src="./johnnydisney.png" alt="in disney">
+      <img src="./falljohnny.jpg" alt="guardians of galaxy fall">
+      <img src="./johnnydrum.png" alt="drummin">
+      <img src="./johnnygwin.png" alt="winnin">
+      <img src="./johnnysparkle.png" alt="sparkle">
+      <img src="./johnnytat.png" alt="tattin up">
+      <img src="./johnnyride.png" alt="vroom vroom">
+      <img src="./johnnysnaz.png" alt="oh yeah">
+    </div>
+  </section> -->
+
+  <!-- <section class="party-info party-center">
+  
+    <h2>🎉 Party Details 🎉</h2>
+    <p>We are so excited to see you at Johnny's 40th birthday party! There will be food (including some of Johnny's favorite foods and drinks), friends, games and even a contest! So please come out to celebrate with us! </p>
+   
+    <p><strong>Date:</strong> Sunday, May 4th</p>
+    <p><strong>Time:</strong> 3:00 PM – 6:00 PM </p>
+    <p><strong>Where:</strong> Johnny & Nina's Home</p>
+
+  </section> -->
+
+
+  <!-- <section class="about-johnny party-center">
+    <h2>💖 We Love Johnny 💖 </h2>
+    <p>Johnny is more than the sweetest man in the world, he is also the King of Cool: Collector of HUNDREDS of Funko Pops, Crocs Connoisseur, Disney Adult, Legendary Lego-ist, Master Crafter, and always rocking that Nike drip.</p>
+    <div class="gallery">
+      <img src="./johnnyfunko.png" alt="Funko">
+    </div>
+  </section> -->
+
+
+
+  <!-- <section class="contest-info party-center">
+    <h2>👟 Dress Like Johnny Contest 👑</h2>
+    <p>Imitation is the sincerest form of flattery! Let's show Johnny how freakin' cool he is by dressing like him! And YES there will be a contest and prizes for the most Johnny-like participant! So throw your crocs and tie dye on and LET'S GOOOOOOOOOOO!</p>
+  </section> -->
+
+
+
+<!-- 
+  <section class="gallery">
+   
+    <img src="https://placehold.co/200x200/00FFFF/000?text=Nike" alt="Nike">
+    <img src="https://placehold.co/200x200/FFD700/000?text=Crocs" alt="Crocs">
+    <img src="https://placehold.co/200x200/FF69B4/000?text=Disney" alt="Disney">
+  </section> -->
+ 
+  <!-- <section>
+    <a class="rsvp-button" href="#">May the Johnny-est Win</a>
+  </section> -->
+
+  <!-- blue -->
+  <script>
+    function randomizeCroc(id, delay) {
+      const croc = document.getElementById(id);
+      function move() {
+        const x = Math.floor(Math.random() * (window.innerWidth - 100));
+        const y = Math.floor(Math.random() * (window.innerHeight - 100));
+        croc.style.left = `${x}px`;
+        croc.style.top = `${y}px`;
+      }
+      move(); // initial position
+      setInterval(move, delay);
+    }
+  
+    // Call with slightly staggered delays for chaos 💚
+    randomizeCroc('Blue1', 3000);
+    randomizeCroc('Blue2', 3500);
+    randomizeCroc('Blue3', 4000);
+
+  </script>
+
+<!-- pink-->
+<script>
+  function randomizePop(id, delay) {
+    const croc = document.getElementById(id);
+    function move() {
+      const x = Math.floor(Math.random() * (window.innerWidth - 100));
+      const y = Math.floor(Math.random() * (window.innerHeight - 100));
+      croc.style.left = `${x}px`;
+      croc.style.top = `${y}px`;
+    }
+    move(); // initial position
+    setInterval(move, delay);
+  }
+
+  // Call with slightly staggered delays for chaos 💚
+  randomizePop('pink1', 3000);
+  randomizePop('pink2', 3500);
+  randomizePop('pink3', 4000);
+
+</script>
+
+<!-- multi -->
+<script>
+  function randomizeSwoosh(id, delay) {
+    const croc = document.getElementById(id);
+    function move() {
+      const x = Math.floor(Math.random() * (window.innerWidth - 100));
+      const y = Math.floor(Math.random() * (window.innerHeight - 100));
+      croc.style.left = `${x}px`;
+      croc.style.top = `${y}px`;
+    }
+    move(); // initial position
+    setInterval(move, delay);
+  }
+
+  // Call with slightly staggered delays for chaos 💚
+  randomizeSwoosh('multi1', 3000);
+  randomizeSwoosh('multi2', 3500);
+  randomizeSwoosh('multi3', 4000);
+
+</script>
+
+<!-- yellow -->
+<script>
+  function randomizeSwoosh(id, delay) {
+    const croc = document.getElementById(id);
+    function move() {
+      const x = Math.floor(Math.random() * (window.innerWidth - 100));
+      const y = Math.floor(Math.random() * (window.innerHeight - 100));
+      croc.style.left = `${x}px`;
+      croc.style.top = `${y}px`;
+    }
+    move(); // initial position
+    setInterval(move, delay);
+  }
+
+  // Call with slightly staggered delays for chaos 💚
+  randomizeSwoosh('yellow1', 3000);
+  randomizeSwoosh('yellow2', 3500);
+  randomizeSwoosh('yellow3', 4000);
+
+</script>
+  
+<!-- parallax -->
+<script>
+  const hero = document.querySelector('.hero');
+
+  window.addEventListener('scroll', () => {
+    const scrollY = window.scrollY;
+    hero.style.backgroundPosition = `center ${scrollY * 0.5}px`;
+  });
+</script>
+
+<!-- audio -->
+<!-- <script>
+  const audio = document.getElementById('party-audio');
+  const popup = document.getElementById('party-popup');
+  const btn = document.getElementById('party-btn');
+
+  btn.addEventListener('click', () => {
+    popup.style.display = 'none';
+    audio.play();
+  });
+  
+</script> -->
+
+<!-- stop music -->
+<script>
+  const stopBtn = document.getElementById('stop-music-btn');
+
+  stopBtn.addEventListener('click', () => {
+    audio.pause();
+    audio.currentTime = 0; // Reset to start
+  });
+</script>
+
+<script>
+  (function () {
+    const overlay = document.getElementById('gate-overlay');
+    const btn = document.getElementById('party-btn');
+    const audio = document.getElementById('party-audio');
+    const hint = document.getElementById('sound-hint');
+
+    // Focus the button for a11y
+    window.addEventListener('DOMContentLoaded', () => {
+      btn?.focus({ preventScroll: true });
+    });
+
+    async function enterSite() {
+      // Hide overlay first for snappy UX
+      overlay.style.display = 'none';
+
+      // Attempt to play (should succeed due to click)
+      try {
+        await audio.play();
+        hint.textContent = '';
+      } catch (err) {
+        // If for whatever reason playback is blocked, show a gentle nudge
+        hint.textContent = 'Tap anywhere to enable sound.';
+        overlay.style.display = 'grid'; // show again so they can try
+      }
+    }
+
+    btn.addEventListener('click', enterSite);
+
+    // Keyboard support (Enter/Space when button focused)
+    btn.addEventListener('keyup', (e) => {
+      if (e.code === 'Enter' || e.code === 'Space') {
+        enterSite();
+      }
+    });
+  })();
+</script>
+
+<noscript>
+  <style>#gate-overlay{display:none!important}</style>
+</noscript>
+</body>
+</html>
