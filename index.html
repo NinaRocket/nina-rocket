@@ -10,14 +10,7 @@
 </head>
 <body>
   <button id="stop-music-btn" title="Stop the music">🔇 Silence</button>
-  <!-- <div id="party-popup">
-    <div class="popup-box">
-      <h2>Welcome to your mind</h2>
-      <button id="party-btn">Enter for Peace</button>
-    </div>
-  </div>
-  
-  <audio id="party-audio" src="I've Got To See You Again.mp3" preload="auto"></audio> -->
+
 <!-- AUDIO (update src to your track) -->
 <audio id="party-audio" preload="auto" loop>
   <source src="I've Got To See You Again.mp3" type="audio/mpeg">
@@ -75,72 +68,10 @@
   <img class="bouncing-yellow" id="yellow3"  src="./yellow.png" alt="yellow3">
 
   </div>
-  <!-- <section class="neon-slider">
-    <div class="slider-track">
-      <img src="./johnnydisney.png" alt="in disney">
-      <img src="./falljohnny.jpg" alt="guardians of galaxy fall">
-      <img src="./johnnydrum.png" alt="drummin">
-      <img src="./johnnygwin.png" alt="winnin">
-      <img src="./johnnysparkle.png" alt="sparkle">
-      <img src="./johnnytat.png" alt="tattin up">
-      <img src="./johnnyride.png" alt="vroom vroom">
-      <img src="./johnnysnaz.png" alt="oh yeah">
-
-      <img src="./johnnydisney.png" alt="in disney">
-      <img src="./falljohnny.jpg" alt="guardians of galaxy fall">
-      <img src="./johnnydrum.png" alt="drummin">
-      <img src="./johnnygwin.png" alt="winnin">
-      <img src="./johnnysparkle.png" alt="sparkle">
-      <img src="./johnnytat.png" alt="tattin up">
-      <img src="./johnnyride.png" alt="vroom vroom">
-      <img src="./johnnysnaz.png" alt="oh yeah">
-    </div>
-  </section> -->
-
-  <!-- <section class="party-info party-center">
   
-    <h2>🎉 Party Details 🎉</h2>
-    <p>We are so excited to see you at Johnny's 40th birthday party! There will be food (including some of Johnny's favorite foods and drinks), friends, games and even a contest! So please come out to celebrate with us! </p>
-   
-    <p><strong>Date:</strong> Sunday, May 4th</p>
-    <p><strong>Time:</strong> 3:00 PM – 6:00 PM </p>
-    <p><strong>Where:</strong> Johnny & Nina's Home</p>
-
-  </section> -->
-
-
-  <!-- <section class="about-johnny party-center">
-    <h2>💖 We Love Johnny 💖 </h2>
-    <p>Johnny is more than the sweetest man in the world, he is also the King of Cool: Collector of HUNDREDS of Funko Pops, Crocs Connoisseur, Disney Adult, Legendary Lego-ist, Master Crafter, and always rocking that Nike drip.</p>
-    <div class="gallery">
-      <img src="./johnnyfunko.png" alt="Funko">
-    </div>
-  </section> -->
-
-
-
-  <!-- <section class="contest-info party-center">
-    <h2>👟 Dress Like Johnny Contest 👑</h2>
-    <p>Imitation is the sincerest form of flattery! Let's show Johnny how freakin' cool he is by dressing like him! And YES there will be a contest and prizes for the most Johnny-like participant! So throw your crocs and tie dye on and LET'S GOOOOOOOOOOO!</p>
-  </section> -->
-
-
-
-<!-- 
-  <section class="gallery">
-   
-    <img src="https://placehold.co/200x200/00FFFF/000?text=Nike" alt="Nike">
-    <img src="https://placehold.co/200x200/FFD700/000?text=Crocs" alt="Crocs">
-    <img src="https://placehold.co/200x200/FF69B4/000?text=Disney" alt="Disney">
-  </section> -->
- 
-  <!-- <section>
-    <a class="rsvp-button" href="#">May the Johnny-est Win</a>
-  </section> -->
-
   <!-- blue -->
   <script>
-    function randomizeCroc(id, delay) {
+    function randomizeBlue(id, delay) {
       const croc = document.getElementById(id);
       function move() {
         const x = Math.floor(Math.random() * (window.innerWidth - 100));
@@ -153,15 +84,15 @@
     }
   
     // Call with slightly staggered delays for chaos 💚
-    randomizeCroc('Blue1', 3000);
-    randomizeCroc('Blue2', 3500);
-    randomizeCroc('Blue3', 4000);
+    randomizeBlue('Blue1', 3000);
+    randomizeBlue('Blue2', 3500);
+    randomizeBlue('Blue3', 4000);
 
   </script>
 
 <!-- pink-->
 <script>
-  function randomizePop(id, delay) {
+  function randomizePink(id, delay) {
     const croc = document.getElementById(id);
     function move() {
       const x = Math.floor(Math.random() * (window.innerWidth - 100));
@@ -174,15 +105,15 @@
   }
 
   // Call with slightly staggered delays for chaos 💚
-  randomizePop('pink1', 3000);
-  randomizePop('pink2', 3500);
-  randomizePop('pink3', 4000);
+  randomizePink('pink1', 3000);
+  randomizePink('pink2', 3500);
+  randomizePink('pink3', 4000);
 
 </script>
 
 <!-- multi -->
 <script>
-  function randomizeSwoosh(id, delay) {
+  function randomizeMulti(id, delay) {
     const croc = document.getElementById(id);
     function move() {
       const x = Math.floor(Math.random() * (window.innerWidth - 100));
@@ -195,15 +126,15 @@
   }
 
   // Call with slightly staggered delays for chaos 💚
-  randomizeSwoosh('multi1', 3000);
-  randomizeSwoosh('multi2', 3500);
-  randomizeSwoosh('multi3', 4000);
+  randomizeMulti('multi1', 3000);
+  randomizeMulti('multi2', 3500);
+  randomizeMulti('multi3', 4000);
 
 </script>
 
 <!-- yellow -->
 <script>
-  function randomizeSwoosh(id, delay) {
+  function randomizeYellow(id, delay) {
     const croc = document.getElementById(id);
     function move() {
       const x = Math.floor(Math.random() * (window.innerWidth - 100));
@@ -216,9 +147,9 @@
   }
 
   // Call with slightly staggered delays for chaos 💚
-  randomizeSwoosh('yellow1', 3000);
-  randomizeSwoosh('yellow2', 3500);
-  randomizeSwoosh('yellow3', 4000);
+  randomizeYellow('yellow1', 3000);
+  randomizeYellow('yellow2', 3500);
+  randomizeYellow('yellow3', 4000);
 
 </script>
   
@@ -248,7 +179,7 @@
 <!-- stop music -->
 <script>
   const stopBtn = document.getElementById('stop-music-btn');
-
+  const audio = document.getElementById('party-audio');
   stopBtn.addEventListener('click', () => {
     audio.pause();
     audio.currentTime = 0; // Reset to start
